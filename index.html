@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Say Nope to Dope - Join the movement, get facts, and save your braincells." />
+  <meta name="keywords" content="anti-drug, memes, stay sober, fact of the day, Say Nope to Dope" />
+  <meta name="author" content="Say Nope to Dope" />
+  <meta name="og:image" content="hero-bg.jpg" />
+  <title>Say Nope to Dope</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">☰</div>
+      <h1 class="logo">🚫 Say Nope to Dope</h1>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#stories">Stories</a></li>
+        <li><a href="#meme-generator">Memes</a></li>
+        <li><a href="#join">Join Us</a></li>
+        <li><a href="#resources">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" aria-label="Say Nope to Dope Campaign">
+    <div class="hero-content">
+      <h2>Stay Strong, Stay Sober</h2>
+      <p><span id="typed-text">Join the fight against addiction.</span></p>
+      <button onclick="showFact()" aria-label="Show a random fact about drug abuse">Show Me Facts 🔍</button>
+    </div>
+    <a href="#stats" class="scroll-down" aria-label="Scroll to stats">↓</a>
+  </section>
+
+  <section id="stats" class="stats-section">
+    <h3>The Real Cost of Drugs</h3>
+    <div class="stats-grid">
+      <div><span data-count="270000">0</span><p>Overdose deaths yearly</p></div>
+      <div><span data-count="70">0</span><p>Users start before 18</p></div>
+      <div><span data-count="740">0</span><p>Economic cost in the US ($B)</p></div>
+    </div>
+  </section>
+
+  <section id="stories" class="stories-section">
+    <h3>Real Stories, Real Pain</h3>
+    <div class="stories-carousel">
+      <div class="story-box active">
+        <p>"I lost my best friend to an overdose. It’s not a game—drugs steal futures." <br>— Alex, 22</p>
+      </div>
+      <div class="story-box">
+        <p>"Recovery was hard, but I’m proof you can rebuild your life." <br>— Sam, 30</p>
+      </div>
+    </div>
+    <div class="carousel-controls">
+      <button class="prev-story" aria-label="Previous story">❮</button>
+      <button class="next-story" aria-label="Next story">❯</button>
+    </div>
+  </section>
+
+  <section id="meme-generator" class="meme-generator-section">
+    <h3>Create Your Own Anti-Drug Meme 💥</h3>
+    <div class="meme-upload-container">
+      <label class="file-label">
+        <input type="file" id="memeImage" accept="image/*" aria-label="Upload meme image" />
+        <span>📸 Upload Image</span>
+      </label>
+      <input type="text" id="memeText" class="meme-text-input" placeholder="✍️ Add your anti-drug punchline..." aria-label="Meme text" />
+      <button id="generateMemeBtn" class="meme-btn">🔥 Generate Meme</button>
+    </div>
+    <div class="meme-preview-container">
+      <canvas id="memeCanvas" width="400" height="400"></canvas>
+    </div>
+    <div class="meme-actions">
+      <button id="downloadMemeBtn" class="download-btn">📥 Download Meme</button>
+      <button id="shareMemeBtn" class="share-btn" disabled>📤 Share Meme</button>
+    </div>
+  </section>
+
+  <section id="join" class="join-section">
+    <h3>Join the Movement</h3>
+    <p>Stay updated and get involved in the fight against drugs.</p>
+    <form id="joinForm">
+      <input type="email" placeholder="Your email..." required aria-label="Email address" />
+      <button type="submit">Stay Sober ✌️</button>
+      <p class="form-success" hidden>Thanks for joining! Check your email! ✌️</p>
+    </form>
+  </section>
+
+  <section id="resources" class="resources-section">
+    <h3>Get Help, Stay Strong</h3>
+    <ul>
+      <li><a href="https://www.samhsa.gov/find-help/national-helpline" target="_blank">SAMHSA Helpline: 1-800-662-HELP</a></li>
+      <li><a href="https://www.drugabuse.gov" target="_blank">NIDA: Drug Abuse Resources</a></li>
+      <li><a href="https://www.na.org" target="_blank">Narcotics Anonymous Meetings</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Say Nope to Dope. Stay based.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+```
